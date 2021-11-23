@@ -1,0 +1,296 @@
+/* global rules */
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth; /*to make smooth scroll*/
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 80%;
+    padding: 0px 15px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* end global rules */
+/* start nav */
+nav{height: 0;}
+nav ul{
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 30px;
+    display: flex;
+}
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    transition: all ease-in-out 0.5s;
+    color: white;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid;
+}
+/* start header  */
+header{
+    background-color: black;
+    background-image: url(../images/hero-image-1440.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+header .header-content{
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+header .header-content h1{
+    text-transform: capitalize;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+
+}
+header .header-content p{
+    line-height: 1.5rem;
+}
+/* start our courses categories  */
+.course-cat{
+    margin-top: 3rem;
+    width: 65%;
+}
+.course-cat .course-cat__title,
+.course-feature .course-feature__title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.course-cat .course-cat__title h2,
+.course-feature .course-feature__title h3{
+    text-transform: capitalize;
+}
+.course-cat .course-cat__title p
+,.course-feature .course-feature__title p{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin: auto 3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: rgb(83, 74, 74);
+}
+.course-cat .course-car__content .cat-content{
+    flex-basis: 32%;
+    background-color: #ecf4f6;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+@media (min-width: 900px) {
+    .course-cat .course-car__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.course-cat .course-car__content .cat-content img{
+    width: 100%;
+    height: 50%;
+    border-radius: 3px;
+}
+.course-cat .course-car__content .cat-content .content-title{
+    padding: 1rem;
+    padding-bottom: 0%;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.course-cat .course-car__content .cat-content p{
+    padding: 1rem;
+}
+.course-cat .course-car__content .cat-content span,
+.course-feature .fet-content .feature span{
+    padding: 1rem;
+    padding-bottom: 0;
+    display: inline-block;
+    color: #a296a8;
+}
+
+.course-cat .course-search{
+    background-color: #7e75ff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    text-align: center;
+    padding: 1.5rem;
+}
+.course-cat .course-search p{
+    font-size: xx-large;
+    color: white;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+.course-cat .course-search div{
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+.course-cat .course-search select,
+.course-cat .course-search button{
+    padding: 10px;
+    width: 190px;
+    border: none;
+    margin: 1.5rem 10px;  
+    background-color: #ecf4f6;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+.course-cat .course-search button{
+    background-color: #7e75ff;
+    color: white;
+    cursor: pointer;
+}
+/* start course features */
+.course-feature{margin-bottom: 3rem;}
+.course-feature .course-feature__title{
+    margin: 4rem auto auto;
+}
+.course-feature ul{
+    display: flex;
+    justify-content: center;
+}
+.course-feature ul li{
+    list-style: none;
+    padding: 10px;
+    text-transform: capitalize;
+    color:#7e75ff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.course-feature ul li:hover{
+    border-bottom: #7e75ff 2px solid;
+    transition: 0.3s;
+}
+
+.course-feature .course-fet__content .fet-content{
+    flex-basis: 23%;
+    border-radius: 3px;
+    background-color: #ecf4f6;
+    margin-top: 1rem;
+
+}
+@media (min-width:900px) {
+    .course-feature .course-fet__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.course-feature .fet-content .price{
+    position: relative;
+    top: -150px;
+    background-color: #7e75ff;
+    width: 40%;
+    margin: 10px;
+    padding: 8px;
+    color: white;
+    border-radius: 2px;
+}
+.course-feature .fet-content img{
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 0;
+}
+.course-feature .fet-content .feature{
+    margin-top: -50px;
+    padding: 1rem;
+}
+.course-feature .fet-content .feature .content-title{
+    /* font-weight: bold; */
+    font-size: larger;
+    text-transform: capitalize;
+    padding:0.5rem;
+}
+.course-feature .fet-content .feature p
+{padding: 0.5rem; font-size: small;}
+.course-feature .developer{
+    display: flex;
+    justify-content:flex-start;
+    padding: 10px;
+}
+.course-feature .developer img{
+    border-radius: 50%;
+    width: 10%;
+    margin-right: 5px;
+    /* margin: 10px; */
+}
+.course-feature .developer span{
+    text-transform: capitalize;
+    color:#a296a8;
+}
+/* start join section  */
+.join-us{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #7e75ff;
+    color: white;
+}
+.join-us .join-community{padding: 3rem;flex: 1;}
+.join-us .join-community h4 {
+    text-transform: capitalize;
+    font-size: x-large;
+    padding:0.5rem ;
+}
+.join-us .join-community p {
+    padding: 0.5rem;
+}
+.join-us form{
+    width: 80%;
+    background-color: white;
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.join-us form input,
+.join-us form button{
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #ecf4f6;
+    border: none;
+    border-radius: 3px;
+}
+.join-us form button{
+    background-color: #7e75ff;
+    color: white;
+    cursor: pointer;
+}
+.join-us .join-img{padding-left:1rem;}
+.join-us .join-img img{
+    height: 99.9%;
+    width: 99.8%;
+}
+/* start footer  */
+footer{
+    background-color: #ecf4f6;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+footer p{padding: 1.5rem;}
