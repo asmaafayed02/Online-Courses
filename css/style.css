@@ -14,9 +14,7 @@ body{
 }
 .container{
     width: 80%;
-    padding: 0px 15px 0px 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 /* end global rules */
@@ -171,6 +169,7 @@ header .header-content p{
 .course-feature ul{
     display: flex;
     justify-content: center;
+    font-size: 0.65rem;
 }
 .course-feature ul li{
     list-style: none;
@@ -247,8 +246,9 @@ header .header-content p{
     /* justify-content: space-between; */
     background-color: #7e75ff;
     color: white;
+    flex-wrap: wrap;
 }
-.join-us .join-community{padding: 3rem;flex: 1;}
+.join-us .join-community{padding: 3rem;flex: 1 0 30rem}
 .join-us .join-community h4 {
     text-transform: capitalize;
     font-size: x-large;
@@ -263,6 +263,7 @@ header .header-content p{
     padding: 2rem;
     margin-left: 4rem;
     margin-top: 2rem;
+    
 }
 .join-us form input,
 .join-us form button{
